@@ -6,6 +6,7 @@ botaoFixo.addEventListener("click", () => {
 });
 window.addEventListener("DOMContentLoaded", () => {
     
+   
     const alerta = document.getElementById("alerta-boas-vindas");
 
     setTimeout(() => {
