@@ -532,33 +532,31 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-.meu-botao {
-    background-color: #1e1e24;
-    color: #ffffff;            
-    padding: 12px 24px;        
-    font-size: 16px;           
-    font-weight: 600;         
-    border: none;              
-    border-radius: 4px;        
-    cursor: pointer;           
-    transition: all 0.3s ease; 
-}
-
-
-.meu-botao:hover {
-    background-color: #c5a059; 
-    transform: translateY(-2px); 
-}
-.btn-topo {
-  
+.botao-fixo-canto {
+    position: fixed;
+    bottom: 20px;       /* Distância de 20 pixels da borda de baixo */
+    right: 20px;        /* Distância de 20 pixels da borda da direita */
+    z-index: 9999;      /* Garante que o botão fique por cima de todas as imagens do site */
     
-    opacity: 0;            
-    pointer-events: none; 
-    transition: all 0.4s ease; 
+    /* Estilização moderna e elegante (removendo padrões feios do navegador) */
+    background-color: #1e1e24; /* Cor escura que combina com a sua navbar */
+    color: #c5a059;            /* Cor do texto em dourado chique */
+    border: 1px solid rgba(197, 160, 89, 0.4); /* Borda fina dourada */
+    padding: 12px 24px;        /* Espaçamento interno para dar tamanho ao botão */
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;  /* Transforma o texto em MAIÚSCULO */
+    letter-spacing: 1px;       /* Espaçamento elegante entre as letras */
+    border-radius: 4px;        /* Cantos suavemente arredondados */
+    cursor: pointer;           /* Transforma a seta do mouse na "mãozinha" de clique */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidade */
+    transition: all 0.3s ease; /* Suaviza a animação do hover */
 }
 
-.btn-topo.mostrar {
-    opacity: 1;         
-    pointer-events: auto;  
+.botao-fixo-canto:hover {
+    background-color: #c5a059; 
+    color: #1e1e24;            
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 20px rgba(197, 160, 89, 0.3); 
 }
