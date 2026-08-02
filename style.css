@@ -36,3 +36,18 @@
     max-width: 150px;  
     object-fit: contain; 
 }
+.hero {
+    background-image: linear-gradient(rgba(30, 30, 36, 0.75), rgba(30, 30, 36, 0.85)), url('nome-da-sua-imagem.png'); 
+    
+    background-size: cover;      /* Faz a imagem cobrir todo o fundo sem distorcer */
+    background-position: center; /* Centraliza a imagem na tela */
+    background-repeat: no-repeat;/* Impede que a imagem fique se repetindo */
+    background-attachment: fixed;/* Opcional: cria um efeito Parallax elegante ao rolar a página */
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
