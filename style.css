@@ -55,13 +55,13 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     letter-spacing: -1px; 
     line-height: 1.1;
     font-family:'Garamond'
-    color: #e5e5e5;
+    color: #ffffff;
 }
 .hero p {
     letter-spacing: 0.5px; 
     line-height: 1.6;     
     font-family:'Garamond'
-    color: #e5e5e5;
+    color: #ffffff;
 }
 
 .btn-hero {
