@@ -54,14 +54,15 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     letter-spacing: -1px; 
     line-height: 1.1;
     font-family:'Garamond'
-    color: #ffffff;
+    color: #e5e5e5;
 }
 .hero p {
     letter-spacing: 0.5px; 
     line-height: 1.6;     
     font-family:'Garamond'
+    color: #e5e5e5;
 }
-/* Novo formato do Botão: Minimalista e Elegante */
+
 .btn-hero {
     display: inline-block;
     background-color: transparent;
