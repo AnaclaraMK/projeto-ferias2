@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; 
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -106,6 +110,7 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     text-transform: uppercase;
     letter-spacing: 2px;       
     margin-bottom: 15px;
+  font-family:'Garamond';
 }
 
 
@@ -113,20 +118,13 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     width: 50px;
     height: 2px;
     background-color: #1e1e24; 
-    margin: 0 auto 25px auto; 
+    margin: 0 auto 25px auto;
 }
 
 .sobre-secao p {
     font-size: 16px;
     line-height: 1.8;         
-    color: #555555;            
+    color: #555555; 
+  font-family:'Garamond';
 }
 
-@media (max-width: 768px) {
-    .sobre-secao {
-        padding: 40px 15px;
-    }
-    .sobre-secao h2 {
-        font-size: 24px;
-    }
-}
