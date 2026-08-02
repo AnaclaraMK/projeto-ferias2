@@ -37,3 +37,21 @@ btnTema.addEventListener("click", () => {
         localStorage.setItem("tema", "light");
     }
 });
+.btn-idioma-toggle {
+    background: transparent;
+    color: #c5a059;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    padding: 5px 10px;
+    font-family: 'Georgia', serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-idioma-toggle:hover {
+    background-color: #c5a059;
+    color: #1e1e24;
+}
