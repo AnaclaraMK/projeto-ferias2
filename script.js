@@ -47,3 +47,15 @@ public class AppJanela extends JFrame {
         SwingUtilities.invokeLater(() -> new AppJanela().setVisible(true));
     }
 }
+import javax.swing.JOptionPane;
+
+public class AlertaBoasVindas {
+    public static void main(String[] args) {
+        JOptionPane.showMessageDialog(
+            null, 
+            "Bonjour, Ça va? Bem-vindo ao sistema sobre a cultura francesa!", 
+            "Bienvenue!",                                   
+            JOptionPane.INFORMATION_MESSAGE                 
+        );
+    }
+}
