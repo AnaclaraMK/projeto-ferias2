@@ -696,3 +696,14 @@ body.dark-mode .cultura-franca h2 {
 body.dark-mode .cultura-franca p {
     color: #cccccc !important;
 }
+body.dark-mode .secao-galeria {
+    background-color: #1a1a1e !important;
+}
+
+body.dark-mode .galeria-cabecalho h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .card-destino h3 {
+    color: #ffffff !important;
+}
