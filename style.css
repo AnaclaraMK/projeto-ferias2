@@ -38,10 +38,11 @@
 }
 .hero {
 background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75)), url('france.jpg');
-    background-size: cover;     
+    background-size: contain;     
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+      background-color: #1e1e24;   
     height: 50vh; 
     display: flex;
     justify-content: center;
