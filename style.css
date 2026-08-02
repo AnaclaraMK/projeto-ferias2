@@ -199,3 +199,96 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     font-weight: normal;
     letter-spacing: 1px;
 }
+
+.secao-servicos {
+    padding: 120px 10%;
+    background-color: #fcfbfa; /* Fundo creme sofisticado para quebrar o branco */
+}
+
+.servicos-cabecalho {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.servicos-cabecalho h2 {
+    font-family: 'Garamond', 'Georgia', serif;
+    font-size: 42px;
+    color: #1e1e24;
+}
+
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: flex-start;
+}
+
+
+.card-servico {
+    background-color: #ffffff;
+    padding: 50px 35px;
+    border: 1px solid #eeebe5;
+    box-shadow: 0 15px 35px rgba(30, 30, 36, 0.02);
+    border-radius: 2px;
+    transition: all 0.4s ease;
+}
+
+
+.numero-servico {
+    display: block;
+    font-family: 'Garamond', serif;
+    font-size: 32px;
+    color: #c5a059; /* Dourado */
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.card-servico h3 {
+    font-family: 'Garamond', 'Georgia', serif;
+    font-size: 24px;
+    color: #1e1e24;
+    margin-bottom: 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.card-servico p {
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+
+.link-servico {
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #1e1e24;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+
+.card-servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(197, 160, 89, 0.08); 
+    border-color: #c5a059;
+}
+
+.card-servico:hover .link-servico {
+    color: #c5a059;
+    padding-left: 5px; 
+}
+
+@media (min-width: 901px) {
+    .card-dois {
+        transform: translateY(40px);
+    }
+
+    .secao-servicos {
+        padding-bottom: 160px;
+    }
+}
