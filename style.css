@@ -88,3 +88,45 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     transform: translateY(-1px);
 }
 
+.sobre-secao {
+    background-color: #ffffff; /* Fundo branco para contrastar com o banner escuro */
+    padding: 60px 20px;        /* Espaçamento interno em cima e embaixo */
+    text-align: center;
+    color: #1e1e24;            /* Texto escuro para leitura perfeita */
+}
+
+.sobre-container {
+    max-width: 700px;         
+    margin: 0 auto;            
+}
+
+.sobre-secao h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;       
+    margin-bottom: 15px;
+}
+
+
+.sobre-linha {
+    width: 50px;
+    height: 2px;
+    background-color: #1e1e24; 
+    margin: 0 auto 25px auto; 
+}
+
+.sobre-secao p {
+    font-size: 16px;
+    line-height: 1.8;         
+    color: #555555;            
+}
+
+@media (max-width: 768px) {
+    .sobre-secao {
+        padding: 40px 15px;
+    }
+    .sobre-secao h2 {
+        font-size: 24px;
+    }
+}
