@@ -31,7 +31,7 @@
 
 
 .logo-img {
-    height: 40px;      /* Define uma altura fixa para não quebrar o layout */
+    height: 60px;      /* Define uma altura fixa para não quebrar o layout */
     width: auto;       /* Mantém a proporção correta da largura automaticamente */
     max-width: 150px;  /* Define um limite máximo de largura, se necessário */
     object-fit: contain; /* Garante que a imagem não fique distorcida */
