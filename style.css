@@ -37,7 +37,7 @@
     object-fit: contain; 
 }
 .hero {
-    background-image: linear-gradient(rgba(30, 30, 36, 0.75), rgba(30, 30, 36, 0.85)), url('ac3cc4d87dd5802231611c587c46236f.jpg'); 
+    background-image: url('ac3cc4d87dd5802231611c587c46236f.jpg'); 
     
     background-size: cover;     
     background-position: center;
