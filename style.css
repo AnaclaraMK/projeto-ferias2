@@ -496,3 +496,40 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     background-color: transparent;
     color: #1e1e24;
 }
+
+.rodape {
+    background-color: #1e1e24; 
+    color: #ffffff;            
+    padding: 40px 20px;        
+    text-align: center;
+    border-top: 1px solid rgba(197, 160, 89, 0.2); 
+}
+
+.rodape-conteúdo {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;                 
+}
+
+.rodape p {
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #c5c5c5;            
+}
+
+.rodape .destaque {
+    color: #c5a059;            
+    font-weight: 500;
+}
+
+.rodape-ano {
+    font-size: 12px !important;
+    color: #888888 !important; 
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
