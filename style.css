@@ -611,3 +611,59 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     color: #e5e5e5;
     margin: 0;
 }
+/* =======================================================
+   MODO ESCURO (Variáveis e Estilos)
+======================================================= */
+
+/* Estilo do botão de alternar tema na Navbar */
+.btn-troca-tema {
+    background: transparent;
+    color: #c5a059; /* Dourado chique */
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-troca-tema:hover {
+    background-color: #c5a059;
+    color: #1e1e24;
+}
+body.dark-mode {
+    background-color: #121214; 
+}
+
+body.dark-mode .secao-assimetrica,
+body.dark-mode .secao-servicos,
+body.dark-mode .secao-carrossel,
+body.dark-mode .secao-contato,
+body.dark-mode .contato-container {
+    background-color: #1a1a1e !important;
+    color: #ffffff !important;
+    border-color: #2d2d35 !important;
+}
+
+body.dark-mode .secao-assimetrica h2,
+body.dark-mode .secao-servicos h2,
+body.dark-mode .carrossel-cabecalho h2,
+body.dark-mode .contato-cabecalho h2,
+body.dark-mode .card-servico h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .secao-assimetrica p,
+body.dark-mode .card-servico p {
+    color: #cccccc !important;
+}
+
+body.dark-mode .card-servico {
+    background-color: #222226 !important;
+    border-color: #32323a !important;
+}
+
+body, .secao-assimetrica, .secao-servicos, .card-servico, p, h2 {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
