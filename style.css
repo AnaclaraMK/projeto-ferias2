@@ -92,39 +92,110 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     transform: translateY(-1px);
 }
 
-.sobre-secao {
-    background-color: #ffffff; /* Fundo branco para contrastar com o banner escuro */
-    padding: 60px 20px;        /* Espaçamento interno em cima e embaixo */
-    text-align: center;
-    color: #1e1e24;            /* Texto escuro para leitura perfeita */
+.secao-assimetrica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    padding: 120px 10%;
+    background-color: #ffffff;
+    overflow: visible;
 }
 
-.sobre-container {
-    max-width: 700px;         
-    margin: 0 auto;            
+
+.cultura-franca {
+    background-color: #fcfbfa; 
 }
 
-.sobre-secao h2 {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;       
+
+.sub-tag {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #c5a059;
     margin-bottom: 15px;
-  font-family:'Garamond';
+    font-weight: 600;
 }
 
-
-.sobre-linha {
-    width: 50px;
-    height: 2px;
-    background-color: #1e1e24; 
-    margin: 0 auto 25px auto;
+.secao-assimetrica h2 {
+    font-family: 'Garamond', 'Georgia', serif;
+    font-size: 42px;
+    color: #1e1e24;
+    margin-bottom: 25px;
+    font-weight: normal;
 }
 
-.sobre-secao p {
+.secao-assimetrica p {
+    font-family: 'Georgia', serif;
     font-size: 16px;
-    line-height: 1.8;         
-    color: #555555; 
-  font-family:'Garamond';
+    line-height: 1.9;
+    color: #555555;
+    max-width: 480px;
 }
 
+
+.bloco-imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.07); 
+    border-radius: 2px;
+}
+
+
+.imagem-subida {
+    transform: translateY(-50px);
+}
+
+
+.texto-deslocado {
+    padding-left: 40px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.secao-galeria {
+    padding: 100px 10%;
+    background-color: #ffffff;
+}
+
+.galeria-cabecalho {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.galeria-cabecalho h2 {
+    font-family: 'Garamond', 'Georgia', serif;
+    font-size: 42px;
+}
+
+
+.grid-assimetrico {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.card-destino {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-destino img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+
+.card-destino:hover img {
+    transform: scale(1.03);
+}
+
+.card-destino h3 {
+    margin-top: 15px;
+    font-family: 'Garamond', serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
