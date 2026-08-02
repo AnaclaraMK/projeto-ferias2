@@ -575,7 +575,7 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
 }
 
 .alerta-toast.mostrar-alerta {
-    top: 30px;                 
+    top: 20px;                 
 }
 
 .alerta-conteudo {
