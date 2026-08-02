@@ -59,3 +59,4 @@ public class AlertaBoasVindas {
         );
     }
 }
+console.log("JavaScript integrado com sucesso!");
