@@ -37,21 +37,46 @@ btnTema.addEventListener("click", () => {
         localStorage.setItem("tema", "light");
     }
 });
-.btn-idioma-toggle {
-    background: transparent;
-    color: #c5a059;
-    border: 1px solid rgba(197, 160, 89, 0.4);
-    padding: 5px 10px;
-    font-family: 'Georgia', serif;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-left: 10px;
-    transition: all 0.3s ease;
+// 1. Dicionário contendo os textos em Português e Francês
+const traducoes = {
+    pt: {
+        "menu-home": "Home",
+        "menu-sobre": "Sobre",
+        "menu-servicos": "Serviços",
+        "hero-titulo": "Explore o país mais chique do mundo!",
+        "hero-subtitulo": "Referência mundial na moda, culinária e paisagens. O que está perdendo?!",
+        "hero-botao": "Conhecer Mais"
+    },
+    fr: {
+        "menu-home": "Accueil",
+        "menu-sobre": "À Propos",
+        "menu-servicos": "Services",
+        "hero-titulo": "Explorez le pays le plus chic du monde !",
+        "hero-subtitulo": "Référence mondiale de la mode, de la gastronomie et dos paysages. Qu'attendez-vous ?!",
+        "hero-botao": "En Savoir Plus"
+    }
+};
+const btnIdioma = document.getElementById("btn-idioma");
+
+function traduzirPagina(idioma) {
+    const elementos = document.querySelectorAll("[data-translate]");
+    
+    elementos.forEach(elemento => {
+        const chave = elemento.getAttribute("data-translate");
+        if (traducoes[idioma] && traducoes[idioma][chave]) {
+            elemento.textContent = traducoes[idioma][chave];
+        }
+    });
+
+    btnIdioma.textContent = idioma === "pt" ? "FR" : "PT";
+    localStorage.setItem("idioma", idioma);
 }
 
-.btn-idioma-toggle:hover {
-    background-color: #c5a059;
-    color: #1e1e24;
-}
+const idiomaSalvo = localStorage.getItem("idioma") || "pt";
+traduzirPagina(idiomaSalvo);
+
+btnIdioma.addEventListener("click", () => {
+    const idiomaAtual = localStorage.getItem("idioma") || "pt";
+    const novoIdioma = idiomaAtual === "pt" ? "fr" : "pt";
+    traduzirPagina(novoIdioma);
+});
