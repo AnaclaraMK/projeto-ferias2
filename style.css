@@ -667,3 +667,14 @@ body.dark-mode .card-servico {
 body, .secao-assimetrica, .secao-servicos, .card-servico, p, h2 {
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
+body.dark-mode .cultura-franca {
+    background-color: #1a1a1e !important;
+}
+
+body.dark-mode .cultura-franca h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .cultura-franca p {
+    color: #cccccc !important;
+}
