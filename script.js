@@ -59,4 +59,5 @@ public class AlertaBoasVindas {
         );
     }
 }
-console.log("JavaScript integrado com sucesso!");
+alert("O JavaScript está vivo e conectado!");
+
