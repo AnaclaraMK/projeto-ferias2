@@ -583,11 +583,17 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     align-items: center;
     gap: 15px;
 }
+.alerta-img-icone {
+    width: 10px;        
+    height: auto;       
+    object-fit: contain; 
+    display: block;
+}
 
-.alerta-icone {
-    font-size: 10px;
-    color: #c5a059;       
-    display:flex;
+.alerta-conteudo {
+    display: flex;
+    align-items: center; 
+    gap: 12px;           
 }
 
 .alerta-texto h4 {
