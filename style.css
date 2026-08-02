@@ -559,3 +559,48 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(197, 160, 89, 0.3); 
 }
+.alerta-toast {
+    position: fixed;
+    top: -100px;              
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #1e1e24;
+    color: #ffffff;
+    padding: 15px 25px;
+    border: 1px solid rgba(197, 160, 89, 0.4); 
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 10000;            
+    transition: top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.alerta-toast.mostrar-alerta {
+    top: 30px;                 
+}
+
+.alerta-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.alerta-icone {
+    font-size: 24px;
+    color: #c5a059;         
+}
+
+.alerta-texto h4 {
+    font-family: 'Garamond', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c5a059;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+.alerta-texto p {
+    font-family: 'Georgia', serif;
+    font-size: 13px;
+    color: #e5e5e5;
+    margin: 0;
+}
