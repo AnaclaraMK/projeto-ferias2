@@ -584,7 +584,7 @@ background-image: linear-gradient(rgba(30, 30, 36, 0.6), rgba(30, 30, 36, 0.75))
     gap: 15px;
 }
 .alerta-img-icone {
-    width: 10px;        
+    width: 28px;        
     height: auto;       
     object-fit: contain; 
     display: block;
