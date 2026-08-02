@@ -2,5 +2,5 @@ const botaoFixo = document.getElementById("btnFixoContato");
 
 
 botaoFixo.addEventListener("click", () => {
-    window.location.hash = "janela-contato";
+    window.location.hash = "home";
 });
