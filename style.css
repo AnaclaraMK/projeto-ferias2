@@ -37,12 +37,12 @@
     object-fit: contain; 
 }
 .hero {
-    background-image: linear-gradient(rgba(30, 30, 36, 0.75), rgba(30, 30, 36, 0.85)), url('nome-da-sua-imagem.png'); 
+    background-image: linear-gradient(rgba(30, 30, 36, 0.75), rgba(30, 30, 36, 0.85)), url('ac3cc4d87dd5802231611c587c46236f.jpg'); 
     
-    background-size: cover;      /* Faz a imagem cobrir todo o fundo sem distorcer */
-    background-position: center; /* Centraliza a imagem na tela */
-    background-repeat: no-repeat;/* Impede que a imagem fique se repetindo */
-    background-attachment: fixed;/* Opcional: cria um efeito Parallax elegante ao rolar a página */
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 80vh; 
     display: flex;
     justify-content: center;
@@ -50,4 +50,15 @@
     text-align: center;
     color: #ffffff;
     padding: 0 20px;
+}
+.hero h1 {
+    font-weight: bold;
+    letter-spacing: -1px; 
+    line-height: 1.1;
+    font-family:'Garamond'
+}
+.hero p {
+    letter-spacing: 0.5px; 
+    line-height: 1.6;     
+    font-family:'Garamond'
 }
